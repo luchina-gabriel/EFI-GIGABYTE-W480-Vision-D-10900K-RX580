@@ -1,0 +1,37 @@
+## USB Type C
+
+18. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 18 (12000000) | 14200000 | Type -1 			FRONTAL, USB/C sem switch
+17. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 17 (11000000) | 14100000 | Type -1			FRONTAL, USB/C sem switch
+T:18,17:10
+
+30. AppleUSB30XHCIPort | AppleUSB30XHCIPort |  4 (04000000) | 00400000 | Type -1 			TRASEIRA, segunda porta (cima para baixo), COM switch
+29. AppleUSB30XHCIPort | AppleUSB30XHCIPort |  3 (03000000) | 00300000 | Type -1			TRASEIRA, primeira porta (cima para baixo), COM switch
+T:29,30:9
+
+## USB 2.0
+10. AppleUSB20XHCIPort | AppleUSB20XHCIPort | 10 (0a000000) | 14a00000 | Type -1 			TRASEIRA, BIOS Port, acima da HDMI
+ 9. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  9 (09000000) | 14900000 | Type -1 			TRASEIRA, acima da DisplayPort
+ 6. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  6 (06000000) | 14600000 | Type -1 			FRONTAL, lado Power
+ 5. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  5 (05000000) | 14500000 | Type -1			FRONTAL, lado USB/C
+T:10,9,6,5
+
+## USB 3.0
+19. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 19 (13000000) | 14300000 | Type -1 			TRASEIRA, vermelha, abaixo DisplayPort
+20. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 20 (14000000) | 14400000 | Type -1 			TRASEIRA, vermelha, abaixo da porta acima
+22. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 22 (16000000) | 14600000 | Type -1			FRONTAL, lado Power
+21. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 21 (15000000) | 14500000 | Type -1
+T:19,20,22,21:3
+
+## USB 3.0 - HUB
+23. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 23 (17000000) | 14700000 | Type -1 			TRASEIRA, Hub Amarela/Azul, 4 PORTAS
+T:23:255
+
+## USB 2.0 - HUB
+ 7. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  7 (07000000) | 14700000 | Type -1 			TRASEIRA, Hub Amarela/Azul, 4 PORTAS
+T:7:255 
+
+## Internal
+11. AppleUSB20XHCIPort | AppleUSB20XHCIPort | 11 (0b000000) | 14b00000 | Type -1 			INTERNA / Coolers
+T:11:255
+
+18,17,30,29,10,9,6,5,19,20,22,21,23,7,11

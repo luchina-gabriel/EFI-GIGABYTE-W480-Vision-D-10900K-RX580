@@ -1,0 +1,42 @@
+Mapping USB - W480 Vision D
+
+--> USB 2.0
+10. AppleUSB20XHCIPort | AppleUSB20XHCIPort | 10 (0a000000) | 14a00000 | Type -1		Traseira, BIOS PORT, acima HDMI
+ 9. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  9 (09000000) | 14900000 | Type -1		Traseira, acima DisplayPort
+ 6. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  6 (06000000) | 14600000 | Type -1 		Frontal, lado Power
+ 5. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  5 (05000000) | 14500000 | Type -1		Frontal, lado USB/C
+------------------------------------------------------------------------------------------------------------------------------------------------------- 
+ 3. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  3 (03000000) | 14300000 | Type -1		Traseira, abaixo DisplayPort, vermelha
+ 4. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  4 (04000000) | 14400000 | Type -1		Traseira, vermelha, acima da azul
+T:10,9,6,5,3,4:0
+
+####################################################################################################################################################### 
+
+--> USB 3.0
+22. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 22 (16000000) | 14600000 | Type -1		Frontal, lado USB/C Bugou a porta ao lado
+21. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 21 (15000000) | 14500000 | Type -1 		Frontal, lado Power Bugou a porta ao lado
+19. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 19 (13000000) | 14300000 | Type -1 		Traseira, abaixo DisplayPort, vermelha
+20. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 20 (14000000) | 14400000 | Type -1 		Traseira, vermelha, acima da azul
+T:22,21,19,20:3
+
+#######################################################################################################################################################
+
+--> USB/C - without switch (10)
+18. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 18 (12000000) | 14200000 | Type -1 		Frontal, USB-C Única
+17. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 17 (11000000) | 14100000 | Type -1 		Frontal, USB-C Única
+T:18,17:10
+
+#######################################################################################################################################################
+
+--> INTERNAL
+11. AppleUSB20XHCIPort | AppleUSB20XHCIPort | 11 (0b000000) | 14b00000 | Type -1 		NZXT WaterCoolr
+12. AppleUSB20XHCIPort | AppleUSB20XHCIPort | 12 (0c000000) | 14c00000 | Type -1 		ITE Device
+T:11,12:255
+
+23. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 23 (17000000) | 14700000 | Type -1 		4 Portas Hub Traseiro - 3.0
+ 7. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  7 (07000000) | 14700000 | Type -1		4 Portas Hub Traseiro - 2.0
+T:23:3
+T:7:0
+
+
+10,9,6,5,22,21,19,20,8,17,18,12,23,7
